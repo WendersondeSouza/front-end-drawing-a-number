@@ -1,6 +1,18 @@
-
+.h80 {
+    height: 60px;
+}
 
 /* OS ESTILOS COMEÇAM AQUI */
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
 .img-login-icon {
     height: 95%;
 }

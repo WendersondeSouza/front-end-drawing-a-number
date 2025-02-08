@@ -11,26 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        .h80 {
-            height: 80px;
-        }
-
-        .navbar {
-            margin: 0;
-            padding: 0;
-        }
-
-        .row {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/rajdhani.css">
 
 </head>
-<body class="bg-dark text-light d-flex align-items-center flex-column">
-    <nav class="navbar container-fluid d-flex align-items-center justify-content-center bg-black bg-opacity-10 bg-body-tertiary">
+<body class="rajdhani-regular bg-dark text-light d-flex align-items-center flex-column">
+    <nav class="navbar container-fluid d-flex align-items-center justify-content-center bg-black bg-opacity-10 bg-body-tertiary h80">
         <div class="col-9 h50 d-flex align-items-center justify-content-start container m-0 p-0">
             <div class="row h-100 col-12">
                 <div class="col-1 h-100 align-items-center justify-content-center">
@@ -60,6 +45,21 @@
             </div> 
         </div>
     </nav>
+
+    <div class="conteiner-fluid w-100 align-items-center justify-content-center d-flex blue">
+        <main class="red col-9 main-test d-flex align-items-center justify-content-center flex-column">
+            <div class="logo-img d-flex align-items-center justify-content-center red">
+                <img src="./media/logo.png" alt="Logo da SorteAndo" class="img-fluid">
+            </div>
+            <div class="w-100 main-text d-flex align-items-center justify-content-center flex-row">
+                <p class="me-1 text-center align-items-center justify-content-center d-flex p-1 red m-0">Sortear um número entre</p>
+                <input class="ms-1 number-input border-0" type="number" min="0" value="1">
+                <p class="ms-1 text-center align-items-center justify-content-center d-flex p-1 red m-0">e</p>
+                <input class="ms-1 number-input border-0" type="number" min="1" value="100">
+            </div>
+            <button class="" style="height: 20px; width: 120px;">botao</button>
+        </main>
+    </div>
 
     <script src="./javascript/main.js"></script>
 </body>
