@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,27 +11,82 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/rajdhani.css">
 
+    <style>
+        .red {
+            border: 1px solid red;
+        }
+
+        .blue {
+            border: 1px solid blue;
+        }
+
+        main {
+            border-radius: 20px;
+            box-shadow: 2px 2px 2px #f8f9fa1a;
+            height: 400px;
+        }
+
+        .div-sorteio input {
+            border: 2px solid greenyellow;
+            width: 120px;
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        .secundary-text {
+            font-size: 2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            width: 200px;
+            height: 50px;
+            font-size: 1.5rem;
+            font-weight: 900;
+            border-radius: 15px;
+            background-color: rgb(164, 241, 48);
+            color: rgba(0, 0, 0, 0.795);
+            text-transform: uppercase;
+            border-color: black;
+        }
+
+        .btn-primary:hover {
+            background-color: rgba(171, 255, 46, 0.815);
+            color: #000;
+            border: 1px solid black;
+        }
+
+        footer {
+            bottom: 0;
+        }
+    </style>
 </head>
+
 <body class="rajdhani-regular bg-dark text-light d-flex align-items-center flex-column">
-    <nav class="navbar container-fluid d-flex align-items-center justify-content-center bg-black bg-opacity-10 bg-body-tertiary h80">
+    <nav
+        class="navbar container-fluid d-flex align-items-center justify-content-center bg-black bg-opacity-10 bg-body-tertiary h80">
         <div class="col-9 h50 d-flex align-items-center justify-content-start container m-0 p-0">
             <div class="row h-100 col-12">
                 <div class="col-1 h-100 align-items-center justify-content-center">
-                    <a href="./index.html" class="mx-auto col-11 h-100 align-items-center justify-content-center d-flex">
+                    <a href="./index.html"
+                        class="mx-auto col-11 h-100 align-items-center justify-content-center d-flex">
                         <div class="col-12 h-100">
                             <img src="./media/exemplo.png" alt="Logo de Exemplo" class="img-fluid">
                         </div>
-                        
+
                     </a>
                 </div>
                 <div class="col-3 ms-auto row p-0">
-                    
+
                     <div class="col-3 align-items-center justify-content-center login-icon ">
                         <a href="#" class="w-100 h-100 d-flex align-items-center justify-content-center">
-                            <img src="./media/person_24dp_FFF_FILL0_wght400_GRAD0_opsz24.png" alt="Login icon" class="img-fluid img-login-icon">
+                            <img src="./media/person_24dp_FFF_FILL0_wght400_GRAD0_opsz24.png" alt="Login icon"
+                                class="img-fluid img-login-icon">
                         </a>
                     </div>
                     <div class="col d-flex align-items-center justify-content-start p-0 text-center">
@@ -40,27 +96,65 @@
                             <span class="login-text"> Cadastrar-se</span>
                         </p>
                     </div>
-                    
                 </div>
-            </div> 
+            </div>
         </div>
     </nav>
 
-    <div class="conteiner-fluid w-100 align-items-center justify-content-center d-flex blue">
-        <main class="red col-9 main-test d-flex align-items-center justify-content-center flex-column">
-            <div class="logo-img d-flex align-items-center justify-content-center red">
+    <div class="m-2 conteiner-fluid w-100 align-items-center justify-content-center d-flex">
+        <main
+            class="col-9 main-test d-flex align-items-center justify-content-center flex-column bg-black bg-opacity-10 bg-body-tertiary">
+            <div class="logo-img d-flex align-items-center justify-content-center">
                 <img src="./media/logo.png" alt="Logo da SorteAndo" class="img-fluid">
             </div>
-            <div class="w-100 main-text d-flex align-items-center justify-content-center flex-row">
-                <p class="me-1 text-center align-items-center justify-content-center d-flex p-1 red m-0">Sortear um número entre</p>
-                <input class="ms-1 number-input border-0" type="number" min="0" value="1">
-                <p class="ms-1 text-center align-items-center justify-content-center d-flex p-1 red m-0">e</p>
-                <input class="ms-1 number-input border-0" type="number" min="1" value="100">
+            <div class="w-100 main-text d-flex align-items-center justify-content-center flex-row div-sorteio">
+                <p class="me-1 text-center align-items-center justify-content-center d-flex p-1 m-0 secundary-text">
+                    Sortear um número entre</p>
+                <input class="ms-1 p-0 number-input text-white bg-dark" type="number" min="0" value="1">
+                <p class="ms-1 text-center align-items-center justify-content-center d-flex p-1 m-0 secundary-text">e
+                </p>
+                <input class="ms-1 bg-dark number-input text-white p-0
+                " type="number" min="1" value="100">
             </div>
-            <button class="" style="height: 20px; width: 120px;">botao</button>
+            <button class="btn btn-primary mt-2">Sortear</button>
         </main>
     </div>
 
+    <footer class="d-flex align-items-center justify-content-center col-lg-12 bg-dark bg-opacity-10 bg-body-tertiary position-absolute p-3">
+        <div class="row col-9">
+            <div class="col-6 d-flex align-items-center text-start about flex-column">
+                <h2 class="m-0 w-100 primary-title-footer rajdhani-semibold">About</h2>
+                <p class="w-100 text-start paragraph-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Debitis aliquid quae, possimus amet, dolorem atque ut nostrum delectus voluptatibus, voluptas quod
+                    laborum odit cum ea. Nobis cum aspernatur vel ullam!</p>
+            </div>
+
+            <div class="col-6 d-flex align-content-center align-items-center flex-column">
+                <h2 class="m-0 w-100 primary-title-footer rajdhani-semibold">Contact</h2>
+                <p class="text-start w-100 paragraph-footer">
+                    11 11111 1111
+                </p>
+
+                <h2 class="m-0 w-100 primary-title-footer rajdhani-semibold">Social</h2>
+                <div class="social-icons row m-0 p-0 col-12 h-auto">
+                    <div class="icons me-2">
+                        <a href="https://github.com/WendersondeSouza" target="_blank" class="w-100 h-100 d-flex align-items-center justify-content-center">
+                            <img src="./media/github-icon.png" alt="Icone do GitHub" class="img-fluid">
+                        </a>
+                        
+                    </div>
+                    <div class="icons me-2">
+                        <a href="https://www.instagram.com/wendersan000/" target="_blank" class="w-100 h-100 d-flex align-items-center justify-content-center">
+                            <img src="./media/insta-icon.png" alt="Icone do Instagram" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <script src="./javascript/main.js"></script>
 </body>
+
 </html>
