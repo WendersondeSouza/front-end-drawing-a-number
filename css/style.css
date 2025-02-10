@@ -6,6 +6,11 @@
 
 /* titles styles */
 
+.primary-title {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
 .primary-title-footer {
     font-size: 1.3rem;
 }
@@ -76,6 +81,41 @@
     padding: 5px;
 }
 
+main {
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #f8f9fa1a;
+    min-height: 400px;
+}
+
+.div-sorteio input {
+    border: 2px solid greenyellow;
+    width: 120px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.btn-primary {
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-radius: 15px;
+    background-color: rgb(164, 241, 48);
+    color: rgba(0, 0, 0, 0.795);
+    text-transform: uppercase;
+    border-color: black;
+}
+
+.btn-primary:hover {
+    background-color: rgba(171, 255, 46, 0.815);
+    color: #000;
+    border: 1px solid black;
+}
+
+footer {
+    bottom: 0;
+}
+
 .social-icons .icons{
     width: 27px;
     height: 27px;
@@ -90,4 +130,70 @@
     overflow: visible;
     padding: 0;
     margin: 0;
+}
+
+/* 
+THIS MODAL IS A TEST, IM USING FOR NOW TO STUDY MODALS WHITOUT USING BOOTSTRAP
+OR ANITHING ELSE OF THIS TYPE
+*/
+
+.modal {
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+} 
+
+.modal-content {
+    background-color: #212529;
+    padding: 20px;
+    width: 700px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ffffff4d;
+    text-align: center;
+}
+
+.modal-content .exit-modal {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-content .exit-modal span {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: lightgray;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.exit-modal span:hover {
+    background-color: darkgray;
+    color: #fff;
+}
+
+.img-login-modal {
+    width: 70px;
+    height: 70px;
+}
+
+.show-modal {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
 }

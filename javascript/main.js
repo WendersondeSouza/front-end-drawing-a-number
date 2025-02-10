@@ -24,4 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   
-  
+  // modal login
+  function openModal() {
+    const modal = document.getElementById('modal')
+    modal.classList.add('show-modal')
+}
+
+function closeModal() {
+    const modal = document.getElementById('modal')
+    modal.classList.remove('show-modal')
+}
